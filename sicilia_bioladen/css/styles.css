@@ -188,13 +188,15 @@ nav a:hover {
 
     /* TODO: Add mobile menu toggle */
 }
+
 /* --- Layout Utilities --- */
 .section {
     padding: var(--spacing-xl) 0;
 }
 
 .section-alt {
-    background-color: #EFEFE8; /* Slightly darker than bg */
+    background-color: #EFEFE8;
+    /* Slightly darker than bg */
 }
 
 .container {
@@ -230,7 +232,7 @@ nav a:hover {
     background: var(--color-white);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     transition: transform var(--transition-fast), box-shadow var(--transition-fast);
     display: flex;
     flex-direction: column;
@@ -238,7 +240,7 @@ nav a:hover {
 
 .product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .product-image {
@@ -249,10 +251,25 @@ nav a:hover {
 }
 
 /* Placeholders for now - will replace with real images later */
-.placeholder-oil { background-color: #A4B68E; }
-.placeholder-orange { background-color: #FFB347; }
-.placeholder-vanilla { background-color: #F3E5AB; }
-.placeholder-box { background-color: #D4A373; }
+.placeholder-oil {
+    background-image: url('../assets/images/olive_oil.png');
+    background-color: transparent;
+}
+
+.placeholder-orange {
+    background-image: url('../assets/images/oranges.png');
+    background-color: transparent;
+}
+
+.placeholder-vanilla {
+    background-image: url('../assets/images/vanillas.png');
+    background-color: transparent;
+}
+
+.placeholder-box {
+    background-image: url('../assets/images/citrus_box.png');
+    background-color: transparent;
+}
 
 .product-info {
     padding: var(--spacing-md);
@@ -324,7 +341,7 @@ nav a:hover {
     background: var(--color-white);
     padding: var(--spacing-lg);
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .contact-card h3 {
@@ -358,7 +375,7 @@ footer {
 }
 
 .footer-links a {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     margin: 0 var(--spacing-md);
     font-size: 0.9rem;
 }
@@ -368,7 +385,7 @@ footer {
 }
 
 .copyright {
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 0.8rem;
 }
 
@@ -377,7 +394,7 @@ footer {
     .about-content {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-links {
         display: flex;
         flex-direction: column;
@@ -430,9 +447,10 @@ footer {
         height: 100vh;
         background-color: var(--color-white);
         padding: var(--spacing-xl) var(--spacing-lg);
-        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
         transition: var(--transition-fast);
-        display: block !important; /* Override previous display: none */
+        display: block !important;
+        /* Override previous display: none */
     }
 
     .nav-menu.active {
