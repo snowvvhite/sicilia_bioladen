@@ -81,11 +81,20 @@ header {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--color-primary);
     letter-spacing: 1px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
 }
 
 .logo span {
@@ -271,6 +280,13 @@ nav a:hover {
     background-color: transparent;
 }
 
+.placeholder-glass {
+    background-image: url('../assets/images/glass_bottle_white.png');
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .product-info {
     padding: var(--spacing-md);
     flex-grow: 1;
@@ -300,6 +316,24 @@ nav a:hover {
     font-size: 0.8rem;
     font-weight: 600;
     align-self: flex-start;
+}
+
+.price-tag {
+    margin-top: var(--spacing-sm);
+    font-size: 1.1rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: var(--color-text-light);
+    margin-right: var(--spacing-sm);
+    font-size: 0.9rem;
+}
+
+.new-price {
+    color: var(--color-accent);
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .coming-soon {
@@ -465,4 +499,13 @@ footer {
     .nav-menu a {
         font-size: 1.2rem;
     }
+}
+/* Hover effect for Glass Bottle */
+.placeholder-glass:hover {
+    background-image: url('../assets/images/glass_bottle_hands.png');
+}
+
+/* Hover effect for Olive Oil Canister */
+.placeholder-oil:hover {
+    background-image: url('../assets/images/oil_canister_2.jpg');
 }
